@@ -24,4 +24,4 @@ app.post('/products', function(req, res) {
   res.send({"status": "okay"})
 })
 
-app.listen(8001)
+app.listen(process.env.PORT || 8001)
