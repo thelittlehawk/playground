@@ -42,7 +42,7 @@ app.post('/products', function(req, res) {
 })
 
 app.post('/products/array', function(req, res) {
-  req.body.map(x => products.push(x))
+  req.body.products.map(x => products.push(x))
   res.send({"status": "created"})
 })
 
