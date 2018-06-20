@@ -41,4 +41,9 @@ app.post('/products', function(req, res) {
   res.send({"status": "created"})
 })
 
+app.post('/products/array', function(req, res) {
+  req.body.map(x => products.push(x))
+  res.send({"status": "created"})
+})
+
 app.listen(process.env.PORT || 8001)
