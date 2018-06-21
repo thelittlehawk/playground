@@ -28,8 +28,8 @@ app.get('/images', function(req, res) {
   res.send(images)
 })
 
-app.get('/orders', function(req, res) {
-  res.send(orders)
+app.get('/purchases', function(req, res) {
+  res.send(purchases)
 })
 
 app.post('/purchase', function(req, res) {
