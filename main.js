@@ -32,6 +32,10 @@ app.get('/purchases', function(req, res) {
   res.send(purchases)
 })
 
+app.get('/orders', function(req, res) {
+  res.send(purchases)
+})
+
 app.post('/purchase', function(req, res) {
   req.body.purchase.map(x => purchases.push(x))
   res.send({ "status": "Purchased created!" })
