@@ -6,7 +6,7 @@ app.use(bodyParser.json())
 
 const items = [
   { "image": "milk", "title": "Milk", "description": "Milk is a white liquid produced by the mammary glands of mammals. It is the primary source of nutrition for infant mammals before they are able to digest other types of food.", "quantity": 20, "price": 1 },
-  { "image": "chocolate", "title": "Milk", "description": "Chocolate is a typically sweet, usually brown food preparation of Theobroma cacao seeds, roasted and ground. It is made in the form of a liquid, paste, or in a block, or used as a flavoring ingredient in other foods.", "quantity": 50, "price": 2 }
+  { "image": "chocolate", "title": "Chocolate", "description": "Chocolate is a typically sweet, usually brown food preparation of Theobroma cacao seeds, roasted and ground. It is made in the form of a liquid, paste, or in a block, or used as a flavoring ingredient in other foods.", "quantity": 50, "price": 2 }
 ];
 
 const purchases = [];
