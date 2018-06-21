@@ -9,7 +9,7 @@ const items = [
   { "image": "chocolate", "title": "Milk", "description": "Chocolate is a typically sweet, usually brown food preparation of Theobroma cacao seeds, roasted and ground. It is made in the form of a liquid, paste, or in a block, or used as a flavoring ingredient in other foods.", "quantity": 50, "price": 2 }
 ];
 
-const orders = [];
+const purchases = [];
 
 const images = [
   { "image": "milk", "url": "https://image.freepik.com/free-vector/milk-bottle_1020-433.jpg" },
@@ -32,9 +32,9 @@ app.get('/orders', function(req, res) {
   res.send(orders)
 })
 
-app.post('/order', function(req, res) {
-  req.body.order.map(x => orders.push(x))
-  res.send({"status": "Purchased created!"})
+app.post('/purchase', function(req, res) {
+  req.body.purchase.map(x => purchases.push(x))
+  res.send({ "status": "Purchased created!" })
 })
 
 // app.post('/login', function(req, res) {
